@@ -136,15 +136,6 @@ npm start
 
 4. Откройте http://localhost:3000 в браузере
 
-## 🔒 Security Features
-
-- Password hashing with bcrypt
-- JWT token authentication
-- Protected API routes
-- Form validation
-- CORS protection
-- HTTP-only cookies
-
 ## 🔒 Функции безопасности
 - Хеширование паролей с помощью bcrypt
 - Аутентификация через JWT токены
@@ -152,16 +143,6 @@ npm start
 - Валидация форм
 - CORS защита
 - HTTP-only куки
-
-## 🎨 Design Features
-
-- Responsive design for all screen sizes
-- Smooth page transitions
-- Interactive form elements
-- Loading states and animations
-- Error handling UI
-- Dark theme support
-- Gradient backgrounds
 
 ## 🎨 Особенности дизайна
 - Адаптивный дизайн для всех размеров экранов
@@ -172,19 +153,10 @@ npm start
 - Поддержка темной темы
 - Градиентные фоны
 
-## 👤 Author
-
-**qloux**
-- GitHub: [@qloux](https://github.com/qloux)
-
 ## 👤 Автор
 qloux
 
-GitHub: @qloux
-
-## 📄 License
-
-This project is licensed under the MIT License.
+GitHub: [@qloux](https://github.com/qloux)
 
 ## 📄 Лицензия
 Этот проект распространяется под лицензией MIT.
