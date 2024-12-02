@@ -1,0 +1,127 @@
+{
+  "common": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "submit": "Submit"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "signUp": "Sign Up",
+    "signIn": "Sign In",
+    "welcome": "Welcome!",
+    "loginMessage": "Log in to your account",
+    "createAccount": "Create Account",
+    "registerMessage": "Fill in the form to register",
+    "yourName": "Your Name",
+    "rememberMe": "Remember me",
+    "orLoginWith": "or login with",
+    "orRegisterWith": "or register with",
+    "alreadyHaveAccount": "Already have an account?",
+    "agreeTo": "I agree to the",
+    "termsOfService": "Terms of Service",
+    "loginError": "Failed to login. Please check your credentials.",
+    "resetPassword": "Reset Password",
+    "forgotPasswordMessage": "Enter your email to reset password",
+    "resetEmailSent": "Password reset email sent",
+    "sending": "Sending...",
+    "sent": "Sent",
+    "backToLogin": "Back to Login",
+    "resetPasswordSuccess": "Password reset email sent",
+    "checkEmail": "Please check your email",
+    "loginToAccount": "Log in to your account",
+    "dontHaveAccount": "Don't have an account?"
+  },
+  "tasks": {
+    "title": "Tasks",
+    "addTask": "Add Task",
+    "editTask": "Edit Task",
+    "deleteTask": "Delete Task",
+    "taskName": "Task Name",
+    "description": "Description",
+    "dueDate": "Due Date",
+    "priority": {
+      "title": "Priority",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "status": {
+      "title": "Status",
+      "completed": "Completed",
+      "pending": "Pending",
+      "inProgress": "In Progress"
+    }
+  },
+  "ai": {
+    "suggestions": "AI Suggestions",
+    "priorityRecommendations": "Priority Recommendations",
+    "timeManagement": "Time Management",
+    "productivityInsights": "Productivity Insights",
+    "overdueTasks": "Overdue Tasks",
+    "urgentTasks": "Urgent Tasks",
+    "completionRate": "Completion Rate",
+    "taskDistribution": "Task Distribution",
+    "tips": "Tips",
+    "insights": "Insights"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "language": {
+      "title": "Language",
+      "en": "English",
+      "ru": "Russian"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "theme": "Theme",
+    "darkMode": "Dark Mode",
+    "language": "Language",
+    "notifications": "Notifications",
+    "security": "Security",
+    "changePassword": "Change Password",
+    "deleteAccount": "Delete Account",
+    "deleteAccountConfirm": "Delete Account Confirmation",
+    "deleteAccountWarning": "Are you sure you want to delete your account? This action cannot be undone.",
+    "oldPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm New Password",
+    "passwordMismatch": "Passwords do not match",
+    "passwordChanged": "Password successfully changed",
+    "passwordChangeError": "Failed to change password",
+    "deleteError": "Failed to delete account",
+    "fetchError": "Failed to fetch profile data",
+    "saveError": "Failed to save profile data",
+    "saveSuccess": "Profile successfully updated",
+    "editProfile": "Edit Profile",
+    "saveChanges": "Save Changes"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Invalid email address",
+    "password": {
+      "min": "Password must be at least {{min}} characters",
+      "max": "Password must be less than {{max}} characters",
+      "match": "Passwords must match"
+    }
+  }
+}

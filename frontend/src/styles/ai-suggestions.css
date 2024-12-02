@@ -1,0 +1,259 @@
+/* Стили для ИИ рекомендаций */
+.ai-suggestions-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: slideInFromTop 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.ai-suggestion-card {
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(148, 163, 184, 0.1) !important;
+  border-radius: 20px !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative;
+  overflow: hidden !important;
+  animation: fadeInScale 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
+}
+
+.ai-suggestion-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.1), rgba(147, 197, 253, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ai-suggestion-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(96, 165, 250, 0.15) !important;
+  border-color: rgba(96, 165, 250, 0.2) !important;
+}
+
+.ai-suggestion-card:hover::before {
+  opacity: 1;
+}
+
+.ai-suggestion-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ai-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+  animation: pulse 2s infinite;
+}
+
+.ai-suggestion-title {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+  background: linear-gradient(135deg, var(--text-dark), var(--primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideInFromRight 0.5s ease-out;
+}
+
+.ai-suggestion-content {
+  color: var(--text-gray);
+  font-family: var(--font-secondary);
+  line-height: 1.6;
+  margin: 1rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+  animation: fadeInUp 0.5s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.ai-suggestion-content::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary-color), var(--primary-light));
+  border-radius: 4px;
+  animation: heightGrow 0.5s ease-out;
+}
+
+.ai-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  animation: slideInFromBottom 0.5s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+.ai-action-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ai-action-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+}
+
+.ai-action-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.ai-action-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: white;
+  border: none;
+}
+
+.ai-action-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(96, 165, 250, 0.2);
+}
+
+.ai-action-secondary {
+  background: var(--bg-white);
+  color: var(--text-dark);
+  border: 2px solid var(--border-light);
+}
+
+.ai-action-secondary:hover {
+  border-color: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+/* Анимации */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(96, 165, 250, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(96, 165, 250, 0);
+  }
+}
+
+@keyframes heightGrow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .ai-suggestions-container {
+    padding: 1rem;
+  }
+  
+  .ai-suggestion-card {
+    padding: 1rem !important;
+  }
+  
+  .ai-actions {
+    flex-direction: column;
+  }
+  
+  .ai-action-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

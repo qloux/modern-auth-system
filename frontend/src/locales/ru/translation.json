@@ -1,0 +1,152 @@
+{
+  "common": {
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "saving": "Сохранение...",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успешно",
+    "confirm": "Подтвердить",
+    "back": "Назад",
+    "add": "Добавить",
+    "submit": "Отправить"
+  },
+  "auth": {
+    "login": "Войти",
+    "register": "Регистрация",
+    "logout": "Выйти",
+    "email": "Email",
+    "password": "Пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "forgotPassword": "Забыли пароль?",
+    "noAccount": "Нет аккаунта?",
+    "haveAccount": "Уже есть аккаунт?",
+    "signUp": "Зарегистрироваться",
+    "signIn": "Войти",
+    "welcome": "Добро пожаловать!",
+    "loginMessage": "Войдите в свой аккаунт",
+    "createAccount": "Создать аккаунт",
+    "registerMessage": "Заполните форму для регистрации",
+    "yourName": "Ваше имя",
+    "rememberMe": "Запомнить меня",
+    "orLoginWith": "или войдите через",
+    "orRegisterWith": "или зарегистрируйтесь через",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "agreeTo": "Я согласен с",
+    "termsOfService": "условиями использования",
+    "resetPassword": "Сбросить пароль",
+    "forgotPasswordMessage": "Введите ваш email для восстановления пароля",
+    "resetEmailSent": "Инструкции по восстановлению пароля отправлены на ваш email",
+    "sending": "Отправка...",
+    "sent": "Отправлено",
+    "backToLogin": "Вернуться к входу",
+    "resetPasswordSuccess": "Письмо для сброса пароля отправлено",
+    "checkEmail": "Пожалуйста, проверьте вашу почту",
+    "loginToAccount": "Войдите в свой аккаунт",
+    "dontHaveAccount": "Нет аккаунта?"
+  },
+  "tasks": {
+    "title": "Мои задачи",
+    "noTasks": "Нет задач",
+    "addTask": "Добавить задачу",
+    "editTask": "Редактировать задачу",
+    "deleteTask": "Удалить задачу",
+    "taskName": "Название задачи",
+    "description": "Описание",
+    "dueDate": "Срок выполнения",
+    "priority": {
+      "title": "Приоритет",
+      "high": "Высокий",
+      "medium": "Средний",
+      "low": "Низкий"
+    },
+    "status": {
+      "title": "Статус",
+      "completed": "Выполнено",
+      "pending": "В процессе",
+      "overdue": "Просрочено"
+    },
+    "filter": {
+      "all": "Все",
+      "active": "Активные",
+      "completed": "Выполненные"
+    },
+    "sort": {
+      "title": "Сортировка",
+      "priority": "По приоритету",
+      "dueDate": "По сроку",
+      "name": "По названию"
+    }
+  },
+  "ai": {
+    "suggestions": "ИИ Рекомендации",
+    "priorityRecommendations": "Приоритетные рекомендации",
+    "overdueTasks": "Просроченные задачи",
+    "urgentTasks": "Срочные задачи",
+    "timeManagement": "Управление временем",
+    "completionRate": "Скорость выполнения",
+    "tips": "Советы",
+    "productivityInsights": "Анализ продуктивности",
+    "taskDistribution": "Распределение задач",
+    "insights": "Выводы",
+    "recommendation": "Рекомендация",
+    "analysis": "Анализ",
+    "optimization": "Оптимизация"
+  },
+  "profile": {
+    "title": "Профиль",
+    "personalInfo": "Личная информация",
+    "settings": "Настройки",
+    "preferences": "Предпочтения",
+    "name": "Имя",
+    "language": "Язык",
+    "theme": "Тема",
+    "darkMode": "Темная тема",
+    "notifications": "Уведомления",
+    "enableNotifications": "Включить уведомления",
+    "security": "Безопасность",
+    "changePassword": "Изменить пароль",
+    "deleteAccount": "Удалить аккаунт",
+    "stats": {
+      "tasksCompleted": "Выполнено задач",
+      "tasksCreated": "Создано задач",
+      "memberSince": "Дата регистрации"
+    },
+    "saveSuccess": "Профиль успешно сохранен",
+    "saveError": "Ошибка при сохранении профиля",
+    "fetchError": "Ошибка при загрузке профиля",
+    "confirmDelete": "Вы уверены, что хотите удалить аккаунт?",
+    "deleteWarning": "Это действие нельзя отменить"
+  },
+  "navigation": {
+    "tasks": "Задачи",
+    "aiSuggestions": "ИИ Рекомендации",
+    "profile": "Профиль",
+    "settings": "Настройки",
+    "help": "Помощь"
+  },
+  "settings": {
+    "title": "Настройки",
+    "theme": {
+      "title": "Тема",
+      "light": "Светлая",
+      "dark": "Темная"
+    },
+    "language": {
+      "title": "Язык",
+      "en": "Английский",
+      "ru": "Русский"
+    }
+  },
+  "validation": {
+    "required": "Это поле обязательно",
+    "email": "Неверный формат email",
+    "password": {
+      "min": "Пароль должен быть не менее {{min}} символов",
+      "max": "Пароль должен быть не более {{max}} символов",
+      "match": "Пароли должны совпадать"
+    }
+  }
+}

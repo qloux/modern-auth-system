@@ -1,0 +1,92 @@
+.github-profile-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.github-profile-link {
+  display: block;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.github-profile-link.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.github-profile-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+}
+
+.github-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.github-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.github-username {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.github-view {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.github-arrow {
+  margin-left: 8px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.github-profile-link:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3);
+}
+
+.github-profile-link:hover .github-icon {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.github-profile-link:hover .github-arrow {
+  transform: translateX(5px);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.github-profile-link.visible {
+  animation: float 3s ease-in-out infinite;
+}

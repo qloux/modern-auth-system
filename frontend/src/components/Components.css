@@ -1,0 +1,44 @@
+/* Импорт модульных стилей */
+@import '../styles/common.css';
+@import '../styles/tasks.css';
+@import '../styles/ai-suggestions.css';
+@import '../styles/profile.css';
+
+/* Основные стили компонентов */
+.app-container {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.nav-tabs {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tab-content {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Медиа-запросы */
+@media (max-width: 1200px) {
+  .ai-suggestions-container {
+    flex-direction: column;
+  }
+  
+  .left-card,
+  .right-card,
+  .center-card {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
